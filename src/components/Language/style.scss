@@ -3,6 +3,7 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+    min-width: 120px;
 
     .selected-lang__title {
         margin-left: 10px;
@@ -11,7 +12,7 @@
         font-size: 18px;
     }
 
-    .selected-lang__flag {
+    .selected-lang__flag-icon {
         width: 30px;
         height: 30px;
     }
@@ -40,7 +41,6 @@
     top: 30px;
     left: -5px; 
     z-index: 100;
-    
     display: none;
 }
 
@@ -53,6 +53,8 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    
+    min-width: 50px;
 
     .lang-list__title {
         margin-left: 10px;
@@ -68,4 +70,12 @@
 
 .lang-list__item:hover .lang-list__title {
     color: #fff;
+}
+.show {
+    display: block;
+    border: #2fFE;
+}
+.dropbtn {
+    border: none;
+    background: none;
 }
