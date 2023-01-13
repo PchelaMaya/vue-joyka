@@ -22,10 +22,24 @@
             img: 'src/assets/Send-img/slider_4.jpg', 
             title: 'Подарить радость просто так!', 
             subtitle: 'Наша жизнь наполнена рутиной. Отправленная JoyKa с тёплыми словами подарит вашим близким хорошее настроение и улыбку на весь день.'},
-        {
+
+        {      
             img: 'src/assets/Send-img/slider_5.jpg', 
+            title: 'Передать привет родителям', 
+            subtitle: 'Ваше счастливое фото порадует их больше любого звонка и напомнит им о ваших чувствах.'},
+        {
+            img: 'src/assets/Send-img/slider_6.jpg', 
+            title: 'Поздравить с праздником', 
+            subtitle: 'Удивить друзей, порадовать родных — какая идея может быть лучше для праздника, чем JoyKa?'},
+        {   
+            img: 'src/assets/Send-img/slider_7.jpg', 
+            title: 'Вдохновить близких своими победами', 
+            subtitle: 'Забил решающий гол? Покорил очередкую вершину? Отправь JoyKa — пусть друзья разделят с тобой радость момента.'},
+            {
+            img: 'src/assets/Send-img/slider_8.jpg', 
             title: 'Поделиться воспоминаниями', 
-            subtitle: 'Фотография с фразой: «Помнишь, как классно было?» вызовет волну положительных эмоций и желание встретиться снова.'}
+            subtitle: 'Фотография с фразой: «Помнишь, как классно было?» вызовет волну положительных эмоций и желание встретиться снова.'}   
+
     ])
     const navigation = {
         nextEl: '.swiper-button-next',
@@ -45,7 +59,7 @@
     }
     const breakpoints = {
 
-        slidesPerView: 3,
+        slidesPerView: 1,
     }
 
 </script>
@@ -56,16 +70,20 @@
             <h2 class="send__title">Поводы для отправки</h2>
                 <swiper 
                 :space-between="30" 
+                :centeredSlides="true"
+                :slidesPerView="3"
+                :loop="true"
+                
                 :breakpoints="breakpoints"
                 :modules="[Navigation, Pagination]" 
                 :navigation="navigation" 
                 :pagination="pagination">
                 <SwiperSlide
                 v-for="slide in slides">
-                <div class="swiper-slide">
+                <div class="swiper-slides">
                     <img class="slider__item" 
                     :src="slide.img">
-                    <div class="sliders__text">
+                    <div class="slider__text">
                         <h2 class="slider__title">{{ slide.title }}</h2>
                         <p class="slider__subtitle">{{ slide.subtitle }}</p>
                     </div>
@@ -78,7 +96,7 @@
                     <button class="slider__btn swiper-button-next">
                         <img src="@/assets/Send-img/arrow-right.svg" alt="">
                     </button>
-                    <p class="slider__text">Листайте дальше</p>
+                    <p class="pagination__text">Листайте дальше</p>
                     <div class="swiper-pagination"></div>
                     </div>
                 

@@ -2,20 +2,17 @@
 .send {
     position: relative;
 
-    background: url("@/assets/Send-img/camera.svg") no-repeat,
-    url("@/assets/Send-img/heart.svg") no-repeat,
-    url("@/assets/Send-img/mail.svg") no-repeat, 
-    url("@/assets/Send-img/send-girl.png") no-repeat,
-    url("@/assets/Send-img/send-camera.png") no-repeat,
-    
+    background: 
+    url("@/assets/Send-img/camera.svg") no-repeat,
+    url("@/assets/Send-img/mail.svg") no-repeat,
     linear-gradient(90deg, rgba(241, 217, 203, 0) 0%, #F6DDCF 100%) no-repeat;
 
-    background-position: 0 calc(35%), calc(45%) calc(60%), calc(100%) calc(55%), calc(75%) calc(70%), calc(25%) calc(150%);
+    background-position: 0% 20%, 100% 45%;
     width: 100%;
     height: 1180px;
     z-index: 1;
     &__container {
-        padding: 200px 0;
+        padding-top: 100px;
     }
     &__title {
         margin: 0 auto;
@@ -26,41 +23,85 @@
         color: #172C48;
         text-align: center;
     }
+    &__content {
+        height: 892px;
+        background:url("@/assets/Send-img/send-girl.png") no-repeat;
+        background-position: 75% 10%;
+    }
     &::before {
         content: "";
         position: absolute;
         left: 0px;
-        top: 0px;
+        top: -100px;
         width: 100%;
         height: 324px;
 
         background-image: url("@/assets/Main-img/main-after.svg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         transform: rotate(180deg);
     }
 }
 .swiper {
-    margin-top: 350px;
+    // margin-top: 450px;
     width: 1535px;
-    
+    position: absolute;
+    right: -160px;
+    // margin: auto !important;
+    background: 
+    url("@/assets/Send-img/send-camera.png") no-repeat,
+    url("@/assets/Send-img/heart.svg") no-repeat;
+
+    background-position: -50% 43%, 29% 35%;
+
+    &-slides {
+        margin-top: 350px;
+        width: 490px !important; 
+        height: 402px !important; 
+        background: #fff;
+        border-radius: 30px;
+        padding: 10px;
+        
+        margin-right: 0px ;
+        flex-shrink: 0 !important;
+        box-shadow: 0 22px 1px -10px
+        rgba(152, 93, 1, 0.2); 
+
+    }
 }
-.swiper-slide {
-    width: 490px !important; 
-    height: 402px !important; 
-    background: #fff;
-    border-radius: 30px;
-    padding: 10px;
-    margin-right: 0px ;
-    flex-shrink: 0 !important;
-}
+
 .slider__text {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.slider__title {
+    font-weight: 500;
+    font-size: 24px;
+
+    color: #172C48;
+    max-height: 50px;
+    overflow: hidden;
+}
+.slider__subtitle {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #9EA3AB;
-
+    
+    color: #516176;
+    margin-top: 10px;
+    max-height: 100px;
+    overflow: hidden;
 }
+.buttons {
+    width: 387px;
+    height: 66px;
+    margin-top: 40px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .slider__btn {
     padding: 17px 21px;
     background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
@@ -85,22 +126,23 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 150%;
-
+    
     color: #2783FE;
 }
 .swiper-pagination-total {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-
+    
     color: #9EA3AB;
 }
-.buttons {
-    width: 387px;
-    height: 66px;
-    margin-top: 30px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.pagination__text {
+    max-height: 50px;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #9EA3AB;
+
 }

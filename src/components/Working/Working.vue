@@ -7,7 +7,7 @@
         <h2 class="working__title">Как это работает?</h2>
         <div class="container__working w-inner">
 
-            <div class="point_works--selfi">
+            <div class="point_works--item point_works--selfi">
                 <div class="selfi__img">
                     <img src="@/assets/Working-img/selphi.png" alt="Image">
                 </div>
@@ -18,7 +18,7 @@
                         из галереи JoyKa</p>
                 </div>
             </div>
-            <div class="point_works--injoy injoy">
+            <div class="point_works--item point_works--injoy">
                 <div class="injoy__img">
                     <img src="@/assets/Working-img/injoy.png" alt="Image">
                 </div>
@@ -30,7 +30,7 @@
                         и JoyKa готова!</p>
                 </div>
             </div>
-            <div class="point_works--courier courier">
+            <div class="point_works--item point_works--courier">
                 <div class="courier__img">
                     <img src="@/assets/Working-img/courier.png" alt="Image">
                 </div>
