@@ -6,19 +6,20 @@
     height: 1206px;
     background-color: #fff;
     overflow: hidden;
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 130%;
+        text-align: center;
+        /* width: 693px;  */
+        background: linear-gradient(95.89deg, #7BC0FF -9.88%, #2783FE 82.48%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
-.working__title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 130%;
-    text-align: center;
-    /* width: 693px;  */
-    background: linear-gradient(95.89deg, #7BC0FF -9.88%, #2783FE 82.48%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .w-inner {
     width: 1300px;
 }
@@ -69,43 +70,78 @@
     margin-top: 50px;
     width: 274px;
     height: 161px;
+    &--courier {
+        margin-left: 64px;
+    }
+    &--title {
+        margin-bottom: 16px;
+        font-size: 27px;
+        line-height: 120%;
+        width: 200px; 
+    }
+    &--text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    
+        color: #516176;
+    }
+    &--selfi::after {
+        content: "1";
+        position: absolute;
+        left: 10px;
+        top: 410px;
+        font-family: 'Neucha';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 110%;
+    
+        background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: 100;
+    }
+    &--injoy::after {
+        content: "2";
+        position: absolute;
+        left: 490px;
+        top: 410px;
+        font-family: 'Neucha';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 110%;
+    
+        background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: 100;
+    }
+    &--courier::after {
+        content: "3";
+        position: absolute;
+        left: 990px;
+        top: 410px;
+        font-family: 'Neucha';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 110%;
+    
+        background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: 100;
+    }
+}
 
-}
-.works__text--courier {
-    margin-left: 64px;
-}
-.works__text--title {
-    margin-bottom: 16px;
-    font-size: 27px;
-    line-height: 120%;
-    width: 200px; 
-}
-.works__text--text {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
 
-    color: #516176;
-}
-.works__text--selfi::after {
-    content: "1";
-    position: absolute;
-    left: 10px;
-    top: 410px;
-    font-family: 'Neucha';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 200px;
-    line-height: 110%;
-
-    background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.1;
-    z-index: 100;
-}
 .injoy::before {
     content: "";
     position: absolute;
@@ -117,23 +153,6 @@
     background-image: url("@/assets/Working-img/orange_points.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: 100;
-}
-.works__text--injoy::after {
-    content: "2";
-    position: absolute;
-    left: 490px;
-    top: 410px;
-    font-family: 'Neucha';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 200px;
-    line-height: 110%;
-
-    background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.1;
     z-index: 100;
 }
 
@@ -163,23 +182,7 @@
     background-size: 100%;
     z-index: 100;
 }
-.works__text--courier::after {
-    content: "3";
-    position: absolute;
-    left: 990px;
-    top: 410px;
-    font-family: 'Neucha';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 200px;
-    line-height: 110%;
 
-    background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.1;
-    z-index: 100;
-}
 .receiving {
     
     display: flex;
@@ -201,7 +204,19 @@
         background-position: left center;
         border-radius: 40px;
         z-index: -1;
-
+        &::after {
+            content: "";
+            position: absolute;
+            left: 230px;
+            top: -42px;
+            width: 770px;
+            height: 393px;
+        
+            background-size: 100%;
+            z-index: 100;
+            background: url("./../../assets/Working-img/receiving-girl.png") no-repeat;
+            background-position: calc(50% - 300px) -30px;
+        }
     }
     &__content {
         width: 532px;
@@ -220,6 +235,23 @@
             line-height: 150%;
             color: #516176;
             width: 385px;
+        }
+        &::before {
+            content: "4";
+            position: absolute;
+            left: 650px;
+            top: 55px;
+            font-family: 'Neucha';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 200px;
+            line-height: 110%;
+        
+            background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.1;
+            z-index: -1;
         }
     }
     &--btn {
@@ -242,10 +274,10 @@
     0px 40px 30px -20px #0C6DEE;
     border-radius: 113px;
     text-decoration: none;
-    a:hover {
+    &:hover {
         background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
     }
-    a:active {
+    &:active {
         background: #7BC0FF;
         box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25),
         0px 4px 2px 0 #0C6DEE,
@@ -261,63 +293,3 @@
     }
 
 }
-.receiving__background::after {
-    content: "";
-    position: absolute;
-    left: 230px;
-    top: -42px;
-    width: 770px;
-    height: 393px;
-
-    background-size: 100%;
-    z-index: 100;
-    background: url("./../../assets/Working-img/receiving-girl.png") no-repeat;
-    background-position: calc(50% - 300px) -30px;
-}
-// .receiving {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     // margin-top: 100px;
-//     column-gap: 40px;
-// }
-// .receiving__content {
-//     display: flex;
-//     justify-content: center;
-//     align-items: flex-start;
-//     flex-direction: column;
-//     margin-right: 60px;
-    
-//     position: relative;
-// }
-// .receiving__content h2 {
-//     color: var(--secondary-dark);
-//     font-size: 27px;
-//     font-weight: 700;
-//     margin: 0;
-//     margin-bottom: 16px;
-// }
-// .receiving__content p{
-//     color: var(--gray);
-//     font-size: 18px;
-//     font-weight: 400;
-//     margin: 0;
-//     height: 81px;
-// }
-// .receiving__content::before {
-//     content: "4";
-//     position: absolute;
-//     left: -25px;
-//     top: -20px;
-//     font-family: 'Neucha';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 200px;
-//     line-height: 110%;
-
-//     background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     opacity: 0.1;
-//     z-index: -1;
-// }

@@ -106,10 +106,10 @@
                 0px 40px 30px -20px #0C6DEE;
                 border-radius: 113px;
                 text-decoration: none;
-                a:hover {
+                &:hover {
                     background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
                 }
-                a:active {
+                &:active {
                     background: #7BC0FF;
                     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25),
                     0px 4px 2px 0 #0C6DEE,
