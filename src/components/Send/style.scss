@@ -26,13 +26,13 @@
     &__content {
         height: 892px;
         background:url("@/assets/Send-img/send-girl.png") no-repeat;
-        background-position: 75% 10%;
+        background-position: 78% 10%;
     }
     &::before {
         content: "";
         position: absolute;
         left: 0px;
-        top: -100px;
+        top: -160px;
         width: 100%;
         height: 324px;
 
@@ -44,17 +44,19 @@
 }
 .swiper {
     // margin-top: 450px;
-    width: 1535px;
+    // width: 1535px;
+    margin-right: 920px !important;
+    overflow: inherit !important;
     position: absolute;
-    right: -160px;
+    // right: -160px;
     // margin: auto !important;
     background: 
     url("@/assets/Send-img/send-camera.png") no-repeat,
     url("@/assets/Send-img/heart.svg") no-repeat;
 
-    background-position: -50% 43%, 29% 35%;
+    background-position: -100% 43%, 99% 35%;
 
-    &-slides {
+    &-slide {
         margin-top: 350px;
         width: 490px !important; 
         height: 402px !important; 
@@ -96,7 +98,7 @@
     width: 387px;
     height: 66px;
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;

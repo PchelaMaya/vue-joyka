@@ -7,21 +7,30 @@
 
     const slides = ref([
         {
-            img: 'src/assets/Send-img/slider_1.jpg', 
+            img: 'src/assets/Send-img/slider_8.jpg', 
             title: 'Удивить родных', 
             subtitle: 'Встретились со знаменитостью? Веселитесь на концерте любимой группы? Отдыхаете на экзотическом пляже? Такие фото обязательно должны быть в семейном альбоме!'},
+
         {
-            img: 'src/assets/Send-img/slider_2.jpg', 
+            img: 'src/assets/Send-img/slider_1.jpg', 
             title: 'Пригласить друзей на вечеринку', 
             subtitle: 'От приглашения, переданного лично в руки, настрой хорошо повеселиться обеспечен'},
+
         {
-            img: 'src/assets/Send-img/slider_3.jpg', 
+            img: 'src/assets/Send-img/slider_2.jpg', 
             title: 'Прислать привет из путешествия', 
             subtitle: 'В любой точке мира — вы рядом со своими близкими.'},
-        {   
-            img: 'src/assets/Send-img/slider_4.jpg', 
+           
+        {
+            img: 'src/assets/Send-img/slider_3.jpg', 
             title: 'Подарить радость просто так!', 
             subtitle: 'Наша жизнь наполнена рутиной. Отправленная JoyKa с тёплыми словами подарит вашим близким хорошее настроение и улыбку на весь день.'},
+
+        {   
+            img: 'src/assets/Send-img/slider_4.jpg', 
+            title: 'Поделиться воспоминаниями', 
+            subtitle: 'Фотография с фразой: «Помнишь, как классно было?» вызовет волну положительных эмоций и желание встретиться снова.'},   
+   
 
         {      
             img: 'src/assets/Send-img/slider_5.jpg', 
@@ -34,11 +43,7 @@
         {   
             img: 'src/assets/Send-img/slider_7.jpg', 
             title: 'Вдохновить близких своими победами', 
-            subtitle: 'Забил решающий гол? Покорил очередкую вершину? Отправь JoyKa — пусть друзья разделят с тобой радость момента.'},
-            {
-            img: 'src/assets/Send-img/slider_8.jpg', 
-            title: 'Поделиться воспоминаниями', 
-            subtitle: 'Фотография с фразой: «Помнишь, как классно было?» вызовет волну положительных эмоций и желание встретиться снова.'}   
+            subtitle: 'Забил решающий гол? Покорил очередкую вершину? Отправь JoyKa — пусть друзья разделят с тобой радость момента.'}
 
     ])
     const navigation = {
@@ -57,10 +62,6 @@
             //     return curElem + ' / ' + totalElem
             // }
     }
-    const breakpoints = {
-
-        slidesPerView: 1,
-    }
 
 </script>
 <template>
@@ -72,17 +73,15 @@
                 :space-between="30" 
                 :centeredSlides="true"
                 :slidesPerView="3"
-                :loop="true"
-                
-                :breakpoints="breakpoints"
                 :modules="[Navigation, Pagination]" 
                 :navigation="navigation" 
                 :pagination="pagination">
                 <SwiperSlide
                 v-for="slide in slides">
                 <div class="swiper-slides">
-                    <img class="slider__item" 
-                    :src="slide.img">
+                    <div class="slider__item">
+                        <img :src="slide.img">
+                    </div>
                     <div class="slider__text">
                         <h2 class="slider__title">{{ slide.title }}</h2>
                         <p class="slider__subtitle">{{ slide.subtitle }}</p>
@@ -99,10 +98,7 @@
                     <p class="pagination__text">Листайте дальше</p>
                     <div class="swiper-pagination"></div>
                     </div>
-                
                 </swiper>
-
-            
             </div>
         </div>
 

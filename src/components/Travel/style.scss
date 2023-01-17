@@ -1,0 +1,43 @@
+.travel {
+
+    &__container {
+        background: url("@/assets/Travel-img/travel-girl.png") no-repeat,
+         linear-gradient(180deg, rgba(255, 255, 255, 0) 59.4%, #FFFFFF 100%);
+        margin: 40px auto 130px auto;
+        width: 1010px;
+        height: 540px;
+        box-shadow: 0px 100px 80px rgba(152, 93, 1, 0.0281146), 0px 41.7776px 33.4221px rgba(152, 93, 1, 0.0403893), 0px 22.3363px 17.869px rgba(152, 93, 1, 0.05), 0px 12.5216px 10.0172px rgba(152, 93, 1, 0.0596107), 0px 6.6501px 5.32008px rgba(152, 93, 1, 0.0718854), 0px 2.76726px 2.21381px rgba(152, 93, 1, 0.1);
+        border-radius: 30px;
+    }
+}
+.buttons {
+    width: 642px;
+    height: 70px;
+}
+.button {
+    padding: 21px 72px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    // box-shadow: none;
+    &-prev {
+        background: #fff;
+        border: 1px solid #2783FE;
+        color: #2783FE !important;
+        // margin-right: 20px;
+        &:hover {
+            background: #c0dbfd;
+        }
+    }
+    &-next {
+        background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
+        color: #fff !important;
+        &:hover {
+            background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
+
+        }
+    }
+}
+
