@@ -12,7 +12,7 @@
             name: 'Украина',
             id: 'country-1',
             value: 0,
-            selected: false,
+            selected: true,
             img: '/src/assets/Travel-img/travel-ukrine.png',
           },
           {
@@ -47,7 +47,7 @@
             name: 'Киев',
             id: 'city-1',
             value: 0,
-            selected: false,
+            selected: true,
             img: '/src/assets/Travel-img/travel-ukrine.png',
           },
           {
@@ -83,7 +83,7 @@
             name: 'White JoyKa',
             id: 'white',
             value: 0,
-            selected: false,
+            selected: true,
             img: '/src/assets/Travel-img/travel-white.png',
           },
           {
@@ -119,7 +119,7 @@
             name: 'Украина',
             id: 'country--1',
             value: 0,
-            selected: false,
+            selected: true,
             img: '/src/assets/Travel-img/travel-ukrine.png',
           },
           {
@@ -175,29 +175,29 @@
 <template>
     <section class="travel">
         <div class="travel__content">
-          <div class="travel__content_options">
-            <p class="travel__content_options_steps">Шаг {{ blocks.step + 1 }} из {{ blocks.datas.length }}</p>
-            <div class="travel__content_options_progressBar">
+          <div class="travel__content__area">
+            <p class="area__steps">Шаг {{ blocks.step + 1 }} из {{ blocks.datas.length }}</p>
+            <div class="area__progress">
               <div 
-                class="travel__content_options_progressBar_moving" 
+                class="area__progress-moving" 
                 :style="{width: deltaPercent * (blocks.step + 1)  + '%'}"></div>
             </div>
             <div>
-              <p class="travel__content_options_title">{{ blocks.datas[blocks.step].title }}</p>
-              <div class="travel__content_options_margin_fix">
+              <p class="area__title">{{ blocks.datas[blocks.step].title }}</p>
+              <div class="area__test">
                 <label 
                   v-for="item in blocks.datas[blocks.step].data" 
                   :for='item.id' 
-                  class="travel__content_options_item_preview travel__content_options_item_preview_margin_fix">
+                  class="test__item-preview test__item-preview-test">
                   <img 
-                    class="travel__content_options_item_preview_img" 
+                    class="test__item-preview-img" 
                     :src='item.img' alt="country">
-                  <input _
-                    class="travel__content_options_item_check" 
+                  <input 
+                    class="test__item-check" 
                     @click="SelectAnswer" 
                     :id='item.id' name="city" :value='item.value' type="radio" 
                     :checked='item.selected'> 
-                  <p class="travel__content_options_item_name">{{item.name}}</p>
+                  <p class="test__item-name">{{item.name}}</p>
                 </label>
               </div>
               <div class="travel-buttons">

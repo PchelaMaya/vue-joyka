@@ -26,7 +26,7 @@
     &__content {
         height: 892px;
         background:url("@/assets/Send-img/send-girl.png") no-repeat;
-        background-position: 78% 10%;
+        background-position: calc(50% + 350px) calc(50% + 10px);
     }
     &::before {
         content: "";
@@ -54,7 +54,7 @@
     url("@/assets/Send-img/send-camera.png") no-repeat,
     url("@/assets/Send-img/heart.svg") no-repeat;
 
-    background-position: -100% 43%, 99% 35%;
+    background-position:  calc(50% + 100px)  calc(50% + 10px), calc(50% + 350px) calc(50% - 90px);
 
     &-slide {
         margin-top: 350px;

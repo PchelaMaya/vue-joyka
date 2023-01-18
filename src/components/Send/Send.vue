@@ -53,14 +53,6 @@
      const pagination = {
         el: '.swiper-pagination',
         type: 'fraction',
-            // type: 'custom',
-            // renderCustom: (index, current, total) => {
-            //     if (current < 10) current = '0' + current
-            //     if (total < 10) total = '0' + total
-            //     const curElem = '<span style="font-weight: 700; font-size: 24px; color: #2783FE;">'+current+'</span>'
-            //     const totalElem = '<span class="swiper-pagination-current">'+total+'</span>'
-            //     return curElem + ' / ' + totalElem
-            // }
     }
 
 </script>

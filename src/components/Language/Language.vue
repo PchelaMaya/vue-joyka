@@ -14,7 +14,7 @@
         lang.value = languages.value.find(lang => lang.id === id).name
         langIcon.value = languages.value.find(lang => lang.id === id).icon
     }
-
+    
 </script>
     
 <template>
@@ -27,10 +27,13 @@
         <ul class="select-lang__lang-list">
             <!-- <div class="lang-list__arrow"></div> -->
             <div id="myDropdown" class="dropdown-content">
-            <li v-for="lang in languages" :id="lang.id" class="lang-list__item" @click="selectLang(lang.id)">
+                <li v-for="lang in languages" 
+                :id="lang.id" 
+                class="lang-list__item" 
+                @click="selectLang(lang.id)">
                 <img class="select-lang__flag-icon" :src="lang.icon">
                 <span class="lang-list__title">{{ lang.name }}</span>
-            </li>
+                </li>
             </div>
         </ul>
 
