@@ -53,7 +53,7 @@
     background: 
     url("@/assets/Send-img/send-camera.png") no-repeat,
     url("@/assets/Send-img/heart.svg") no-repeat;
-
+    z-index: 10;
     background-position:  calc(50% + 100px)  calc(50% + 10px), calc(50% + 350px) calc(50% - 90px);
 
     &-slide {
@@ -82,7 +82,7 @@
 
     color: #172C48;
     max-height: 50px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 .slider__subtitle {
     font-weight: 400;

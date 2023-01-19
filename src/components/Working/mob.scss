@@ -1,0 +1,113 @@
+@media (max-width: 1300px) {
+    .container__working {
+        justify-content: center;
+        // align-items: baseline;
+    }
+    .injoy__img::before,
+    .courier__img::before {
+        display: none;
+    }
+    .courier__img::after {
+        left: 680px;
+        top: -82px;
+    }
+    .works__text--selfi::after, 
+    .works__text--injoy::after,
+    .works__text--courier::after,
+    .receiving__content::before {
+    display: none;
+    }
+
+    
+}
+@media (max-width: 890px) {
+    .working {
+        height: 2750px;
+        &__title {
+            font-size: 30px;
+        }
+        .container__working {
+            display: row;
+            flex-wrap: wrap;
+            row-gap: 80px;
+            height: 1820px;
+            margin-bottom: 0px;
+
+            .point_works--courier {
+                margin-top: 50px;
+            }
+        }
+        .works__text {
+            margin-top: 40px;
+            margin-left: 60px;
+            width: 360px;
+            &--title {
+                font-size: 22px;
+                width: 350px;
+            }
+
+        }
+    }
+    .injoy__img::before {
+        display: block;
+        left: 140px;
+        top: 530px;
+        transform: rotate(90deg);
+    }
+    .courier__img::before {
+        display: block;
+        left: 140px;
+        top: 1180px;
+        transform: rotate(90deg);
+    }
+    .courier__img::after {
+        left: -80px;
+        top: 1200px;
+    }
+    .receiving {
+        width: 350px;
+        height: 700px;
+        
+        &__background {
+
+            width: 370px;
+            height: 372px;
+            z-index: 2000;
+            // background-size: 0%;
+            // background-position: left;
+            &::after {
+                left: -40px;
+                top: 0px;
+                width: 390px;
+                height: 372px;  
+
+                background-position: calc(50%) -30px;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 140px;
+            top: 70px;
+            width: 85px;
+            height: 15px;
+            transform: rotate(90deg);
+
+            background-image: url("@/assets/Working-img/orange_points.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 100;
+        }
+        &__content {
+            margin-top: 600px;
+            margin-left: -20px;
+            &--title {
+                font-size: 22px;
+                width: 320px;
+            }
+            &--text {
+                width: 320px;
+            }
+        }
+    }
+}

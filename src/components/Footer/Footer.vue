@@ -1,6 +1,7 @@
 <script setup>
     import { ref } from 'vue'
     import './style.scss'
+    import './mob.scss'
 </script>
 <template>
     <footer class="footer">

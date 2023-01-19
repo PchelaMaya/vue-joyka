@@ -17,3 +17,14 @@ html {
   width: 1219px;
   height: 100%;
 }
+@media (max-width: 1299px) {
+
+  .w-inner {
+    max-width: 1200px;
+} 
+}
+@media (max-width: 960px) {
+  .w-inner {
+    max-width: 360px;
+  }
+} 

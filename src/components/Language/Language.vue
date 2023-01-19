@@ -4,7 +4,7 @@
     import './lang'
     const lang = ref('EN')
     const langIcon = ref('/src/assets/Header-img/icon_en.png')
-    
+    const closedLanguage = ref(true);
     const languages = ref([
         {id: 1, name: 'EN', icon: 'src/assets/Header-img/icon_en.png'},
         {id: 2, name: 'RU', icon: 'src/assets/Header-img/icon_ru.png'},
@@ -32,7 +32,8 @@
                 class="lang-list__item" 
                 @click="selectLang(lang.id)">
                 <img class="select-lang__flag-icon" :src="lang.icon">
-                <span class="lang-list__title">{{ lang.name }}</span>
+                <span class="lang-list__title"
+                >{{ lang.name }}</span>
                 </li>
             </div>
         </ul>

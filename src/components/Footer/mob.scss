@@ -1,0 +1,20 @@
+@media (max-width: 960px) {
+    .footer-menu {
+        width: 360px;
+    }
+    .footer-menu .footer-top {
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+    }
+    .footer-menu .footer-bottom {
+    display: none;
+    }
+    .nav__list {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        text-align: center;
+        row-gap: 30px;
+    }
+}

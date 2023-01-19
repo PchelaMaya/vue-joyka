@@ -8,6 +8,11 @@
                 <h1 class="main__title">JoyKa — эмоции в конверте 
                     Дари моменты радости 
                     вместе с JoyMail!</h1>
+                <h1 class="main__title--mobile">Удивляй! 
+                    Вдохновляй!
+                    Дари тепло близким 
+                    вместе с JoyKa</h1>
+                            
                 <ul class="main__list">
                     <li class="delivery">Доставка из любой точки мира</li>
                     <li class="time">За 12 часов</li>
@@ -30,5 +35,6 @@
     </section>
 </template>
 <style lang="scss">
-    @import './style.scss'
+    @import './style.scss';
+    @import './mob.scss'
 </style>

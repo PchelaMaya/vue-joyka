@@ -1,6 +1,7 @@
 <script setup>
     import { ref } from 'vue'
     import './style.scss'
+    import './mob.scss'
     import { Swiper, SwiperSlide } from 'swiper/vue'
     import { Navigation, Pagination } from 'swiper'
     import 'swiper/scss'
@@ -8,7 +9,7 @@
     const slides = ref([
         {
             img: 'src/assets/Send-img/slider_8.jpg', 
-            title: 'Удивить родных', 
+            title: 'Удивить родных и близких', 
             subtitle: 'Встретились со знаменитостью? Веселитесь на концерте любимой группы? Отдыхаете на экзотическом пляже? Такие фото обязательно должны быть в семейном альбоме!'},
 
         {
@@ -50,9 +51,20 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     }
-     const pagination = {
+    const pagination = {
         el: '.swiper-pagination',
         type: 'fraction',
+    }
+    const breakpoints = {
+        360: {
+            slidesPerView: 1
+        },
+        1000: {
+            slidesPerView: 2
+        },
+        1300: {
+            slidesPerView: 3
+        },
     }
 
 </script>
@@ -65,6 +77,7 @@
                 :space-between="30" 
                 :centeredSlides="true"
                 :slidesPerView="3"
+                :breakpoints="breakpoints"
                 :modules="[Navigation, Pagination]" 
                 :navigation="navigation" 
                 :pagination="pagination">

@@ -1,6 +1,7 @@
 <script setup>
     import { ref } from 'vue'
     import './style.scss'
+    import './mob.scss'
 </script>
 <template>
     <section class="working">

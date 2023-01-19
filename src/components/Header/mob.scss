@@ -1,0 +1,41 @@
+@media (max-width: 1299px) {
+    .header {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &__logo {
+            height: 25px;
+        }
+        &__inner {
+            justify-content: center;
+            column-gap: 50px;
+            align-items: center;
+        }
+        &__navbar {
+            display: none;
+        }
+        
+        &__navbar-mobile--active {
+            display: block;
+            }
+        &-mobile-menu {
+            display: block;
+            }
+    }
+
+
+}
+@media (max-width: 960px) {
+    .header__inner {
+        margin: 0 100px;
+    }
+    .header-mobile-menu {
+        display: block;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 500px) {
+    .header__inner {
+        margin: 0;
+    }
+}

@@ -195,7 +195,7 @@
         width: 624px;
         height: 290px;
         background: 
-        url("./../../assets/Working-img/receiving-love.png") no-repeat,
+        url("@/assets/Working-img/receiving-love.png") no-repeat,
         linear-gradient(180deg, #FFC064 34%, #EF7821 112.87%);
         background-size: auto;
         background-position: left center;
@@ -211,7 +211,7 @@
         
             background-size: cover;
             z-index: 100;
-            background: url("./../../assets/Working-img/receiving-girl.png") no-repeat;
+            background: url("@/assets/Working-img/receiving-girl.png") no-repeat;
             background-position: calc(50% - 220px) -30px;
         }
     }
