@@ -9,11 +9,9 @@
             background: 0%;
             margin: 0 20px;
             box-shadow: none;
-            // display: flex;
             &__area {
                 width: 320px;
                 margin: 0;
-                // display: flex;
 
             }
         }
@@ -21,8 +19,9 @@
 
     .area__title-mobile {
         display: block;
-        margin-left: 20px;
-        margin-top: 20px;
+        color: #172C48;
+        font-weight: 700;
+
         font-size: 22px;
         width: 189px;
         height: 52px;
@@ -32,15 +31,18 @@
         grid-template-columns: repeat(2, 1fr);
         margin-top: 40px;
         margin-left: 0;
+        grid-column-gap: 10px;
+        grid-row-gap: 80px;
         // grid-gap: 40px;
     }
-    .test__item-preview{
-        // width: 150px;
 
-    }
     .area__progress-mobile {
-        display: block;
-        width: 93px;
+        margin-top: 20px;
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        column-gap: 20px;
+        width: 360px;
         height: 93px;
     }
     .area__content {
@@ -48,12 +50,14 @@
     }
     .area__progress,
     .area__steps,
-    .area__title {
+    .area__title,
+    .travel-buttons {
         display: none;
     }
+    
     .buttons-mobile {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        // flex-wrap: wrap;
         row-gap: 20px;
         width: 320px;
         height: 160px;
@@ -61,5 +65,8 @@
     }
     .button {
         padding: 21px 70px;
+    }
+    .button-prev {
+        margin: 0;
     }
 }

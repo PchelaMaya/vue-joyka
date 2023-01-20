@@ -216,9 +216,13 @@
                   <p class="test__item-name">{{item.name}}</p>
                 </label>
               </div>
-              <div class="travel-buttons buttons-mobile">
+              <div class="travel-buttons">
                 <button class="button button-prev" @click="PrevButton">Предыдущий шаг</button>
                 <button class="button button-next" @click="NextButton">Следующий шаг</button>
+              </div>
+              <div class="buttons-mobile">
+                <button class="button button-next" @click="NextButton">Следующий шаг</button>
+                <button class="button button-prev" @click="PrevButton">Предыдущий шаг</button>
               </div>
             </div>
           </div>
