@@ -1,6 +1,7 @@
 <script setup>
     import { reactive } from 'vue'
     import './style.scss'
+    import './mob.scss'
     const blocks = reactive({
     step: 0,
     datas: [
@@ -180,9 +181,24 @@
             <div class="area__progress">
               <div 
                 class="area__progress-moving" 
-                :style="{width: deltaPercent * (blocks.step + 1)  + '%'}"></div>
+                :style="{width: deltaPercent * (blocks.step + 1)  + '%'}">
+              </div>
             </div>
-            <div>
+            <div class="area__progress-mobile" >
+              <svg viewbox="0 0 93 93">
+                <circle r="40" cx="46" cy="46" fill="none" stroke-width="12" stroke="#DAEDFF"/>
+                <circle r="40" cx="46" cy="46" fill="none" stroke-width="12" stroke="#2783FE"
+                    stroke-dasharray="45 201.2"
+                    stroke-dashoffset="2" :style="{width: deltaPercent * (blocks.step + 1)  + '%'}"></circle>/>
+                <text x="46" y="53" font-family="Ubuntu" font-size="16"
+                    text-anchor="middle" fill="#8B96A4">
+                    {{ blocks.step + 1 }} из {{ blocks.datas.length }}
+                </text>
+              </svg>
+              <p class="area__title-mobile">{{ blocks.datas[blocks.step].title }}</p>
+
+            </div>
+            <div class="area__content">
               <p class="area__title">{{ blocks.datas[blocks.step].title }}</p>
               <div class="area__test">
                 <label 
@@ -200,7 +216,7 @@
                   <p class="test__item-name">{{item.name}}</p>
                 </label>
               </div>
-              <div class="travel-buttons">
+              <div class="travel-buttons buttons-mobile">
                 <button class="button button-prev" @click="PrevButton">Предыдущий шаг</button>
                 <button class="button button-next" @click="NextButton">Следующий шаг</button>
               </div>
