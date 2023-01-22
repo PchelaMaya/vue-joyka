@@ -3,7 +3,7 @@
 </script>
 <template>
     <section class="main">
-        <div class="container__main w-main">
+        <div class="container__main w-inner">
             <div class="main__about">
                 <h1 class="main__title">JoyKa — эмоции в конверте 
                     Дари моменты радости 

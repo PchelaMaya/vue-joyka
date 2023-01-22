@@ -14,17 +14,17 @@ html {
 
 .w-inner {
   margin: 0 auto;
-  width: 1219px;
+  width: 1220px;
   height: 100%;
 }
 @media (max-width: 1299px) {
 
   .w-inner {
-    max-width: 1200px;
+    width: 100%;
 } 
 }
 @media (max-width: 960px) {
-  .w-inner {
-    max-width: 360px;
-  }
+  // .w-inner {
+  //   max-width: 360px;
+  // }
 } 

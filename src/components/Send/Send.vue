@@ -53,7 +53,9 @@
     }
     const pagination = {
         el: '.swiper-pagination',
+        // type: 'custom',
         type: 'fraction',
+
     }
     const breakpoints = {
         360: {
@@ -70,12 +72,11 @@
 </script>
 <template>
     <section class="send">
-        <div class="send__container w-send">
+        <div class="w-inner">
             <div class="send__content">
             <h2 class="send__title">Поводы для отправки</h2>
                 <swiper 
                 :space-between="30" 
-                :centeredSlides="true"
                 :slidesPerView="3"
                 :breakpoints="breakpoints"
                 :modules="[Navigation, Pagination]" 
@@ -102,7 +103,8 @@
                     </button>
                     <p class="pagination__text">Листайте дальше</p>
                     <div class="swiper-pagination"></div>
-                    </div>
+    
+                </div>
                 </swiper>
             </div>
         </div>

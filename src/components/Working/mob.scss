@@ -7,10 +7,10 @@
     .courier__img::before {
         display: none;
     }
-    .courier__img::after {
-        left: 680px;
-        top: -82px;
-    }
+    // .courier__img::after {
+    //     left: 680px;
+    //     top: -82px;
+    // }
     .works__text--selfi::after, 
     .works__text--injoy::after,
     .works__text--courier::after,
@@ -20,14 +20,14 @@
 
     
 }
-@media (max-width: 890px) {
+@media (max-width: 1300px) {
     .working {
         height: 2750px;
         &__title {
             font-size: 30px;
         }
         .container__working {
-            display: row;
+            display: grid;
             flex-wrap: wrap;
             row-gap: 80px;
             height: 1820px;
@@ -50,19 +50,20 @@
     }
     .injoy__img::before {
         display: block;
-        left: 140px;
-        top: 530px;
+        left: calc(50% - 25px);
+        top: calc(30% - 0px);
         transform: rotate(90deg);
     }
     .courier__img::before {
         display: block;
-        left: 140px;
-        top: 1180px;
+        left: calc(50% - 25px);
+        top: calc(66% - 0px);
         transform: rotate(90deg);
     }
     .courier__img::after {
-        left: -80px;
-        top: 1200px;
+        // position: fixed;
+        left: calc(10%);
+        top: calc(66%);
     }
     .receiving {
         width: 350px;

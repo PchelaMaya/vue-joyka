@@ -6,7 +6,7 @@
 <template>
     <footer class="footer">
         
-        <div class="footer-menu">
+        <div class="footer-menu w-inner">
             <div class="footer-top">
                 <div class="nav__logo--footer">
                     <img src="@/assets/Header-img/Logo.png" alt="Image">
