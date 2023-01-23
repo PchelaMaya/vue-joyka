@@ -1,14 +1,14 @@
 @media (max-width: 1299px) {
     .footer-menu {
-        width: 360px;
+        width: 100%;
     }
     .footer-menu .footer-top {
-    display: grid;
-    row-gap: 20px;
-    justify-content: center;
+        display: grid;
+        row-gap: 20px;
+        justify-content: center;
     }
     .footer-menu .footer-bottom {
-    display: none;
+        display: none;
     }
     .nav__list {
         margin-top: 50px;
@@ -16,5 +16,8 @@
         display: grid;
         text-align: center;
         row-gap: 30px;
+    }
+    .nav__logo--footer {
+        margin: 0 20px;
     }
 }

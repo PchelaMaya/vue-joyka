@@ -4,7 +4,7 @@
     import './lang'
     const lang = ref('EN')
     const langIcon = ref('/src/assets/Header-img/icon_en.png')
-    const closedLanguage = ref(true);
+    const isClosedMenuLanguage = ref(false);
     const languages = ref([
         {id: 1, name: 'EN', icon: 'src/assets/Header-img/icon_en.png'},
         {id: 2, name: 'RU', icon: 'src/assets/Header-img/icon_ru.png'},
@@ -14,6 +14,9 @@
         lang.value = languages.value.find(lang => lang.id === id).name
         langIcon.value = languages.value.find(lang => lang.id === id).icon
     }
+    function isClosedLanguage() {
+        isClosedMenuLanguage.value = !isClosedMenuLanguage.value
+    }
     
 </script>
     
@@ -22,11 +25,12 @@
 
         <img class="selected-lang__flag" :src="langIcon">
         <span class="selected-lang__title">{{ lang }}</span>
-        <button onClick="myFunction()" class="dropbtn"><img class="dropdown-arrow" src="./../../assets/Header-img/Arrow.png">
+        <button @click="isClosedLanguage" class="dropbtn">
+            <img class="dropdown-arrow" src="@/assets/Header-img/Arrow.png">
         </button>
-        <ul class="select-lang__lang-list">
+        <ul :class="{'select-lang__lang-list': true, 'select-lang__lang-list--closed': isClosedLanguage}">
             <!-- <div class="lang-list__arrow"></div> -->
-            <div id="myDropdown" class="dropdown-content">
+            <div id="myDropdown" :class="{'dropdown-content': false, 'dropdown-content--closed': isClosedLanguage}">
                 <li v-for="lang in languages" 
                 :id="lang.id" 
                 class="lang-list__item" 

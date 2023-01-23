@@ -2,15 +2,12 @@
 .header {
     padding-top: 16px;
     padding-bottom: 16px;
-    // width: 100%;
-    // background-color: #fff;
     position: relative;
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // margin: auto;
     }
 
     &__logo {
@@ -134,4 +131,6 @@
 .menu-icon.menu-icon--active::after {
 	transform: rotate(-45deg);
 }
-    
+.dropdown-content {
+    display: none;
+}

@@ -70,13 +70,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 329px;
+    // width: 329px;
     height: 69.6px;
+   
+
     column-gap: 15px;
     margin: 0;
     & img{
-        width: 178px;
-        height: 69.6px;
+        max-height: 100%;
     }
 }
 

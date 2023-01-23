@@ -1,7 +1,7 @@
 import Language from "./../Language/Language.vue"
 
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    // document.getElementById("myDropdown").classList.toggle("show");
 }
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {

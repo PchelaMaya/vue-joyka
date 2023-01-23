@@ -58,21 +58,22 @@
 
     }
     const breakpoints = {
-        360: {
-            slidesPerView: 1
-        },
-        1000: {
+        // 560: {
+        //     // slidesPerView: 1
+        // },
+        630: {
             slidesPerView: 2
         },
         1300: {
             slidesPerView: 3
         },
+        
     }
 
 </script>
 <template>
     <section class="send">
-        <div class="w-inner">
+        <div class="w-inner w-inner--send">
             <div class="send__content">
             <h2 class="send__title">Поводы для отправки</h2>
                 <swiper 
