@@ -29,7 +29,7 @@
     align-items: baseline;
 
     position: relative;
-    height: 540px;
+    // height: 540px;
     margin-top: 20px;
     margin-bottom: 150px;
 }
@@ -143,7 +143,7 @@
     content: "";
     position: absolute;
     left: calc(30% - 15px);
-    top: calc(50% - 22px);
+    top: calc(40% - 0px);
     width: 85px;
     height: 15px;
    
@@ -157,7 +157,7 @@
     content: "";
     position: absolute;
     left: calc(66% - 15px);
-    top: calc(-15%);
+    top: calc(-14%);
     width: 546px;
     height: 532.32px;
 
@@ -170,7 +170,7 @@
     content: "";
     position: absolute;
     left: calc(66% - 15px);
-    top: calc(50% - 22px);
+    top: calc(40% - 0px);
     width: 85px;
     height: 15px;
    
@@ -185,18 +185,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 55px;
-    height: 382px;
+
     position: relative;
     z-index: 1;
     &__background {
         position: relative;
-        width: 624px;
+        width: 53%;
         height: 290px;
         background: 
         url("@/assets/Working-img/receiving-love.png") no-repeat,
         linear-gradient(180deg, #FFC064 34%, #EF7821 112.87%);
-        background-size: auto;
+        // background-size: auto;
         background-position: left center;
         border-radius: 40px;
         z-index: -1;
@@ -215,7 +214,7 @@
         }
     }
     &__content {
-        width: 532px;
+        // width: 532px;
         height: 231px;
         &--title {
             font-weight: 700;
@@ -235,8 +234,8 @@
         &::before {
             content: "4";
             position: absolute;
-            left: 660px;
-            top: 55px;
+            left: 700px;
+            top: 10px;
             font-family: 'Neucha';
             font-style: normal;
             font-weight: 400;

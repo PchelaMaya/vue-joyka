@@ -50,7 +50,7 @@
 }
 .swiper {
 
-      overflow: visible;
+      overflow: visible !important;
 
     &-slides {
         border-radius: 30px;
@@ -92,7 +92,7 @@
     color: #516176;
     margin-top: 10px;
     max-height: 100px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 .buttons {
     margin-top: 70px;

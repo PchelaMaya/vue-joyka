@@ -58,11 +58,13 @@
 
     }
     const breakpoints = {
-        // 560: {
-        //     // slidesPerView: 1
-        // },
+        0: {
+            slidesPerView: 0,
+            navigation: 'false'
+        },
         630: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            // pagination: 'false',
         },
         1300: {
             slidesPerView: 3

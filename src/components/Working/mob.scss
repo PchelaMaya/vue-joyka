@@ -8,7 +8,7 @@
     .works__text--injoy::after,
     .works__text--courier::after,
     .receiving__content::before {
-    display: none;
+        display: none;
     }
 
     .working {
@@ -18,13 +18,9 @@
         }
         .container__working {
             display: grid;
-            // flex-wrap: wrap;
             justify-content: center;
-
             row-gap: 80px;
-            height: 1820px;
-            margin-bottom: 0px;
-
+            margin-bottom: 150px;
             .point_works--courier {
                 margin-top: 50px;
             }
@@ -43,32 +39,34 @@
     .injoy__img::before {
         display: block;
         left: calc(50% - 25px);
-        top: calc(30% - 0px);
+        top: calc(30% - 20px);
         transform: rotate(90deg);
     }
     .courier__img::before {
         display: block;
         left: calc(50% - 25px);
-        top: calc(66% - 0px);
+        top: calc(66% - 20px);
         transform: rotate(90deg);
     }
     .courier__img::after {
         display: none;
-        left: calc(10%);
-        top: calc(66%);
+        left: calc(26%);
+        top: calc(65%);
     }
     .receiving {
-        width: 350px;
-        margin-top: 200px;
-        margin-bottom: 350px;
+        display: grid;
+        justify-content: center;
+        margin: 10px auto 50px auto;
         &__background {
+            background-size: 0%, cover;
             width: 100%;
-            height: 372px;
+            height: 280px;
             z-index: 2000;
             &::after {
-                left: -40px;
-                top: 0px;
-                width: 390px;
+                background-size: 95%;
+                left: -50px;
+                top: -15px;
+                width: 392px;
                 height: 372px;  
 
                 background-position: calc(50%) -30px;
@@ -77,8 +75,8 @@
         &::after {
             content: "";
             position: absolute;
-            left: 140px;
-            top: -100px;
+            left: calc(50% - 40px);
+            top: -120px;
             width: 85px;
             height: 15px;
             transform: rotate(90deg);
@@ -89,8 +87,7 @@
             z-index: 100;
         }
         &__content {
-            margin-top: 600px;
-            margin-left: -20px;
+            margin-top: 20px;
             &--title {
                 font-size: 22px;
                 width: 320px;
