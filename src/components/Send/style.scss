@@ -9,7 +9,6 @@
     overflow: hidden;
     background-size: calc(20%) calc(25%), calc(15%) calc(20%), 100%;
     background-position: -2% 30%, 100% 45%;
-    // width: 100%;
     z-index: 1;
     &__title {
         margin: 0 auto;
@@ -22,8 +21,6 @@
     }
     &__content {
         margin-top: 100px;
-        // background:url("@/assets/Send-img/send-girl.png") no-repeat;
-        // background-position: calc(50% + 350px) calc(50% + 10px);
     }
     &::before {
         content: "";
@@ -45,8 +42,7 @@
     url("@/assets/Send-img/heart.svg") no-repeat,
     url("@/assets/Send-img/send-girl.png") no-repeat;
     z-index: 10;
-    // overflow: visible;
-    background-position:  calc(50% - 430px)  calc(50% + 40px), calc(50% - 220px) calc(50% - 70px), calc(50% + 335px) calc(50% - 65px);
+    background-position:  calc(50% - 430px)  calc(50% + 60px), calc(50% - 220px) calc(50% - 50px), calc(50% + 335px) calc(50% - 45px);
 }
 .swiper {
 
@@ -68,9 +64,11 @@
 .swiper-wrapper {
     margin-top: 350px;
 }
-.slider__item img{
+.slider__item {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 100%;
-
+    height: 182px;
 }
 .slider__text {
     margin-top: 20px;
@@ -79,10 +77,8 @@
 .slider__title {
     font-weight: 500;
     font-size: 24px;
-    // margin-bottom: 300px;
     color: #172C48;
     max-height: 50px;
-    // overflow: hidden;
 }
 .slider__subtitle {
     font-weight: 400;
@@ -92,7 +88,6 @@
     color: #516176;
     margin-top: 10px;
     max-height: 100px;
-    // overflow: hidden;
 }
 .buttons {
     margin-top: 70px;
@@ -121,13 +116,13 @@
 
 .slider__btn:hover {
     background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
-    }
+}
 .slider__btn:active {
     background: #7BC0FF;
     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25),
     0px 4px 6px 0 #0C6DEE,
     0px 40px 30px -20px #0C6DEE;
-    } 
+} 
 .swiper-pagination-custom {
     width: 52px;
     height: 36px;

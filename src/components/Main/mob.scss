@@ -24,8 +24,8 @@
 }
 @media (max-width: 760px) {
     .main {
-        background-size: 120%, cover;
-        background-position: calc(100%) calc(10% + 210px), 50% center;
+        background-size: 440px 360px, cover;
+        background-position: calc(0% - 60px) calc(100% - 190px), 50% center;
         height: auto;
         .container__main {
             padding: 15px 0;
@@ -34,7 +34,6 @@
             width: 100%;
             height: 90px;
             bottom: -25px;
-            // display: none;
         }
         .main__about {
             max-width: 300px;
@@ -61,3 +60,8 @@
 
 
 }
+// @media (max-width: 560px) {
+//     .main {
+//         background-size: 150%, cover;
+//     }
+// }

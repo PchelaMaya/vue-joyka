@@ -4,9 +4,16 @@
     import Language from '@/components/Language/Language.vue'
     
     const isOpenedMobileMenu = ref(false);
+    // const active = ref([
+    //   {isClosedLanguage: true},
+    //   {navActive: false}
+    // ])
     function isOpenedMenu() {
-      isOpenedMobileMenu.value = !isOpenedMobileMenu.value
+      isOpenedMobileMenu.value = !isOpenedMobileMenu.value;
     }
+    // if (body.classList.contains('header__navbar-mobile--active')) {
+    //   document.body.classList.toggle('no-scroll');
+    // }
 </script>
 <template>
 <header class="header">
@@ -34,7 +41,7 @@
       </div>
     </div>
       <nav
-      :class="{'header__navbar-mobile':true,'header__navbar-mobile--active': isOpenedMobileMenu}">
+      :class="{'header__navbar-mobile':true, 'header__navbar-mobile--active': isOpenedMobileMenu}">
         <ul>
           <li><a href="#">Как это работает?</a></li>
           <li><a href="#">Кто мы?</a></li>

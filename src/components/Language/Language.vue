@@ -14,34 +14,28 @@
         lang.value = languages.value.find(lang => lang.id === id).name
         langIcon.value = languages.value.find(lang => lang.id === id).icon
     }
-    function isClosedLanguage() {
-        isClosedMenuLanguage.value = !isClosedMenuLanguage.value
-    }
-    
+
 </script>
     
 <template>
     <div class="lang-menu">
-
         <img class="selected-lang__flag" :src="langIcon">
         <span class="selected-lang__title">{{ lang }}</span>
-        <button @click="isClosedLanguage" class="dropbtn">
+        <button @click="isClosedMenuLanguage = !isClosedMenuLanguage" class="dropbtn" type="button" id="arrow">
             <img class="dropdown-arrow" src="@/assets/Header-img/Arrow.png">
         </button>
-        <ul :class="{'select-lang__lang-list': true, 'select-lang__lang-list--closed': isClosedLanguage}">
-            <!-- <div class="lang-list__arrow"></div> -->
-            <div id="myDropdown" :class="{'dropdown-content': false, 'dropdown-content--closed': isClosedLanguage}">
-                <li v-for="lang in languages" 
-                :id="lang.id" 
-                class="lang-list__item" 
-                @click="selectLang(lang.id)">
+        <ul class="select-lang__lang-list" v-if="isClosedMenuLanguage">
+            <div id="myDropdown" class="{'dropdown-content': false, 'dropdown-content--closed': isClosedLanguage}">
+                <li 
+                    v-for="lang in languages" 
+                    :id="lang.id" 
+                    class="lang-list__item" 
+                    @click="selectLang(lang.id), isClosedMenuLanguage = !isClosedMenuLanguage">
                 <img class="select-lang__flag-icon" :src="lang.icon">
-                <span class="lang-list__title"
-                >{{ lang.name }}</span>
+                    <span class="lang-list__title">{{ lang.name }}</span>
                 </li>
             </div>
         </ul>
-
     </div>
 </template>
 <style>

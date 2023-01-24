@@ -69,6 +69,9 @@
         1300: {
             slidesPerView: 3
         },
+        3000: {
+            slidesPerView: 4
+        },
         
     }
 
@@ -88,8 +91,7 @@
                 <SwiperSlide
                 v-for="slide in slides">
                 <div class="swiper-slides">
-                    <div class="slider__item">
-                        <img :src="slide.img">
+                    <div class="slider__item" :style="{ backgroundImage: `url(${slide.img})` }">
                     </div>
                     <div class="slider__text">
                         <h2 class="slider__title">{{ slide.title }}</h2>

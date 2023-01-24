@@ -1,7 +1,7 @@
-@media (max-width: 630px) {
+@media (max-width: 860px) {
     .w-inner--send {
-        background-size: 100%, 0%, 60%;
-        background-position:  calc(20% - 160px)  calc(25%), 0, calc(70%) calc(20%);
+        background-size: 100%, 0%, 247px 376px;
+        background-position:  calc(20% - 140px)  calc(25%), 0, calc(80%) calc(15%);
     }
     .send {
         background-size: 0%;
@@ -26,8 +26,6 @@
         margin-top: 300px;
     }
     .swiper {
-        // background-size: 0%;
-        // background-position: calc(-10%) calc(15%);
         &-slide {
             width: 320px !important; 
             height: 368px !important; 

@@ -3,16 +3,18 @@
     padding-top: 16px;
     padding-bottom: 16px;
     position: relative;
-
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     }
 
     &__logo {
         display: flex;
         height: 48px;
+        z-index: 999999;
+
     }
 
     &__logo img {
@@ -49,11 +51,15 @@
     display: block;
     justify-content: center;
     position: fixed;
-    z-index: 2;
+    z-index: 9999;
     background: #fff;
     width: 100%;
-    
-    height: 840px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100vh;
+
+    // overflow: hidden;
     & ul {
         margin: 70px 80px;
         list-style: none;
@@ -66,8 +72,13 @@
     & a {
         text-decoration: none;
         font-size: 20px;
+        color: #2783FE;
+
     }
     
+}
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .menu-icon-wrapper {
@@ -82,6 +93,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    
 }
 
 .menu-icon {
@@ -89,6 +101,8 @@
 	width: var(--width);
 	height: var(--line-height);
 	background-color: var(--color);
+    z-index: 999999;
+
 }
 
 .menu-icon::before,
