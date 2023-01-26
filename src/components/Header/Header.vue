@@ -4,10 +4,7 @@
     import Language from '@/components/Language/Language.vue'
     
     const isOpenedMobileMenu = ref(false);
-    // const active = ref([
-    //   {isClosedLanguage: true},
-    //   {navActive: false}
-    // ])
+
     function isOpenedMenu() {
       isOpenedMobileMenu.value = !isOpenedMobileMenu.value;
     }

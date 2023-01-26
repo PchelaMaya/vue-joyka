@@ -151,8 +151,11 @@
     ]
   })
   //Заполнение progressBar
-  const deltaPercent = 100 / blocks.datas.length
-
+  // const r = 40;
+  // const circumference = 2 * Math.PI * r;
+  const deltaPercent = 100 / blocks.datas.length;
+  const deltaProgress = 252 / blocks.datas.length;
+  
   const NextButton = () => {
     if (blocks.step !== blocks.datas.length-1) {
       blocks.step++
@@ -171,7 +174,7 @@
     }
     blocks.datas[blocks.step].data[e.target.value].selected = true
   }
-
+  // <circle r="40" cx="65" cy="0" fill="none" stroke-width="12" stroke="#2783FE" stroke-dasharray="45 201.2" stroke-dashoffset="1" style="transform: rotate(45deg);"></circle>
 </script>
 <template>
     <section class="travel">
@@ -185,11 +188,12 @@
               </div>
             </div>
             <div class="area__progress-mobile" >
-              <svg viewbox="0 0 93 93">
+              <svg viewbox="0 0 45 45" width="45" height="45">
                 <circle r="40" cx="46" cy="46" fill="none" stroke-width="12" stroke="#DAEDFF"/>
                 <circle r="40" cx="46" cy="46" fill="none" stroke-width="12" stroke="#2783FE"
-                    stroke-dasharray="45 201.2"
-                    stroke-dashoffset="2" :style="{width: deltaPercent * (blocks.step + 1)  + '%'}"></circle>/>
+                    :stroke-dasharray="deltaProgress * (blocks.step + 1) + ' 252'"
+                    stroke-dashoffset="0"
+                    transform="rotate(-90 46 46)"></circle>/>    
                 <text x="46" y="53" font-family="Ubuntu" font-size="16"
                     text-anchor="middle" fill="#8B96A4">
                     {{ blocks.step + 1 }} из {{ blocks.datas.length }}
