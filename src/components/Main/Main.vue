@@ -12,7 +12,6 @@
                     Вдохновляй!
                     Дари тепло близким 
                     вместе с JoyKa</h1>
-                            
                 <ul class="main__list">
                     <li class="delivery">Доставка из любой точки мира</li>
                     <li class="time">За 12 часов</li>
@@ -20,10 +19,10 @@
                 </ul>
                 <div class="main__media">
                     <a href="#!" class="btn">Отправить Джойку
-                        <img class="main__btn--img" src="./../../assets/Main-img/icon_mail.svg" alt="image">
+                        <img class="main__btn--img" src="@/assets/Main-img/icon_mail.svg" alt="image">
                     </a>
                     <div class="main__video">
-                        <img src="./../../assets/Main-img/main-play.svg" alt="Image">
+                        <img src="@/assets/Main-img/main-play.svg" alt="Image">
                         <div class="main__video__text">
                             <h2>Посмотрите видеообзор нашего подарка</h2>
                             <p>Время просмотра 1:23 сек</p>

@@ -53,7 +53,6 @@
     }
     const pagination = {
         el: '.swiper-pagination',
-        // type: 'custom',
         type: 'fraction',
 
     }
@@ -64,7 +63,6 @@
         },
         630: {
             slidesPerView: 2,
-            // pagination: 'false',
         },
         1300: {
             slidesPerView: 3
@@ -72,9 +70,7 @@
         3000: {
             slidesPerView: 4
         },
-        
     }
-
 </script>
 <template>
     <section class="send">
@@ -108,11 +104,9 @@
                     </button>
                     <p class="pagination__text">Листайте дальше</p>
                     <div class="swiper-pagination"></div>
-    
                 </div>
                 </swiper>
             </div>
         </div>
-
     </section>
 </template>

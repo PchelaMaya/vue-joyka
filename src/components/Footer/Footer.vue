@@ -5,7 +5,6 @@
 </script>
 <template>
     <footer class="footer">
-        
         <div class="footer-menu w-inner">
             <div class="footer-top">
                 <div class="nav__logo--footer">
@@ -38,10 +37,7 @@
                     <img src="@/assets/Footer-img/youtube.svg" alt=""></a>
                 </div>
                 <a href="#" class="footer-copyright">Дизайн сайта - Алексей Киселев</a>
+            </div>        
         </div>
-            
-        </div>
-    
-
-</footer>
+    </footer>
 </template>

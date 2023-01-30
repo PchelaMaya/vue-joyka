@@ -7,7 +7,6 @@
     <section class="working">
         <h2 class="working__title">Как это работает?</h2>
         <div class="container__working w-inner">
-
             <div class="point_works--item point_works--selfi">
                 <div class="selfi__img">
                     <img src="@/assets/Working-img/selphi.png" alt="Image">
@@ -43,7 +42,6 @@
                         доставит лично в руки адресату</p>
                 </div>
             </div>
-
         </div>
             <div class="receiving w-inner">
                 <div class="receiving__background"></div>
@@ -56,9 +54,7 @@
                         <img class="btn--img" src="@/assets/Main-img/icon_mail.svg" alt="image">
                     </a>
                     </div>
-                </div>
-            
-        </div>
-
+                </div>            
+            </div>
     </section>
 </template>

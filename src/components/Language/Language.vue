@@ -38,9 +38,3 @@
         </ul>
     </div>
 </template>
-<style>
-.show {
-    display: block;
-    border: #2fFE;
-}
-</style>

@@ -1,16 +1,21 @@
-<script setup>
-    
+<script setup> 
     import { ref } from 'vue'
     import Language from '@/components/Language/Language.vue'
     
     const isOpenedMobileMenu = ref(false);
-
+    const isActive = ref([
+      {
+        activeMenu: true
+      }
+    ])
     function isOpenedMenu() {
       isOpenedMobileMenu.value = !isOpenedMobileMenu.value;
-    }
-    // if (body.classList.contains('header__navbar-mobile--active')) {
-    //   document.body.classList.toggle('no-scroll');
-    // }
+      if (isActive.activeMenu) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'visible'
+      }
+    }  
 </script>
 <template>
 <header class="header">
@@ -32,7 +37,6 @@
       <div class="menu-icon-wrapper" @click="isOpenedMenu">
         <div class="menu-icon" 
         :class="{'menu-icon': true, 'menu-icon--active': isOpenedMobileMenu}"
-        
         ></div>
       </div>   
       </div>
@@ -47,7 +51,6 @@
           <li><a href="#">Отзывы</a></li>
         </ul>
       </nav>
-    
   </header>
 </template>
 <style lang="scss">

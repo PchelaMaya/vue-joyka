@@ -174,7 +174,6 @@
     }
     blocks.datas[blocks.step].data[e.target.value].selected = true
   }
-  // <circle r="40" cx="65" cy="0" fill="none" stroke-width="12" stroke="#2783FE" stroke-dasharray="45 201.2" stroke-dashoffset="1" style="transform: rotate(45deg);"></circle>
 </script>
 <template>
     <section class="travel">
