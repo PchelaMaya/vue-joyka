@@ -1,4 +1,3 @@
-
 .send {
     position: relative;
 
@@ -42,7 +41,9 @@
     url("@/assets/Send-img/heart.svg") no-repeat,
     url("@/assets/Send-img/send-girl.png") no-repeat;
     z-index: 10;
-    background-position:  calc(50% - 430px)  calc(50% + 60px), calc(50% - 220px) calc(50% - 50px), calc(50% + 335px) calc(50% - 45px);
+    background-position:  calc(50% - 430px)  calc(50% + 60px), 
+    calc(50% - 220px) calc(50% - 50px), 
+    calc(50% + 335px) calc(50% - 45px);
 }
 .swiper {
 
@@ -148,7 +149,6 @@
     overflow: hidden;
     font-weight: 400;
     font-size: 16px;
-    // line-height: 150%;
     color: #9EA3AB;
     margin-right: 50px;
 }

@@ -5,8 +5,6 @@
     cursor: pointer;
     min-width: 120px;
     z-index: 999999;
-
-
     .selected-lang__title {
         margin-left: 10px;
         color: #2783FE;
@@ -23,10 +21,6 @@
         margin-left: 10px;
     }
 }
-
-// .lang-menu:hover .select-lang__lang-list {
-//     display: flex;
-// }
 
 .select-lang__lang-list {
 
@@ -80,9 +74,6 @@
 .dropbtn {
     border: none;
     background: none;
-}
-.select-lang__lang-list--closed {
-    // display: block;
 }
 .dropdown-content {
     display: none;

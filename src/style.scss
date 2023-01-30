@@ -6,11 +6,6 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
-
-html {
-  overflow-x: hidden;
-}
-
 .w-inner {
   margin: 0 auto;
   width: 1220px;
@@ -20,8 +15,4 @@ html {
   .w-inner {
     width: 100%;
   } 
-}
-.no-scroll {
-  overflow-y: hidden;
-
 }

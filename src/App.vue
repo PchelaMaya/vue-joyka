@@ -5,10 +5,6 @@
   import Send from '@/components/Send/Send.vue';
   import Travel from '@/components/Travel/Travel.vue'
   import Footer from '@/components/Footer/Footer.vue';
-
-    // if (document.querySelector(".header__navbar-mobile").classList.contains("header__navbar-mobile--active")) {
-    //   document.body.classList.toggle('no-scroll');
-    // }
 </script>
 
 <template>

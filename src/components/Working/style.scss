@@ -1,8 +1,6 @@
 .working {
-
     margin-bottom: 100px;
     padding: 15px 0;
-
     overflow: hidden;
     &__title {
         margin: 0;
@@ -10,7 +8,6 @@
         font-size: 50px;
         line-height: 130%;
         text-align: center;
-        /* width: 693px;  */
         background: linear-gradient(95.89deg, #7BC0FF -9.88%, #2783FE 82.48%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -23,7 +20,6 @@
     align-items: baseline;
 
     position: relative;
-    // height: 540px;
     margin-top: 20px;
     margin-bottom: 150px;
 }
@@ -189,7 +185,6 @@
         background: 
         url("@/assets/Working-img/receiving-love.png") no-repeat,
         linear-gradient(180deg, #FFC064 34%, #EF7821 112.87%);
-        // background-size: auto;
         background-position: left center;
         border-radius: 40px;
         z-index: -1;
@@ -208,7 +203,6 @@
         }
     }
     &__content {
-        // width: 532px;
         height: 231px;
         &--title {
             font-weight: 700;

@@ -3,14 +3,9 @@
     import Language from '@/components/Language/Language.vue'
     
     const isOpenedMobileMenu = ref(false);
-    const isActive = ref([
-      {
-        activeMenu: true
-      }
-    ])
     function isOpenedMenu() {
       isOpenedMobileMenu.value = !isOpenedMobileMenu.value;
-      if (isActive.activeMenu) {
+      if (isOpenedMobileMenu.value) {
         document.body.style.overflow = 'hidden'
       } else {
         document.body.style.overflow = 'visible'
